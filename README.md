@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://p3-luna.douyinpic.com/img/tos-cn-i-b829550vbb/625c3e93e6d541a7b2709982e24139f1~tplv-b829550vbb-image.jpeg" width="120" style="border-radius: 15px;" alt="MovieTTD" />
+<img src="./Icon/Icon.jpeg" width="120" style="border-radius: 15px;" alt="MovieTTD" />
 
 # MovieTTD · Server
 
