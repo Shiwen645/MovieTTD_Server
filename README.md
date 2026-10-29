@@ -1,4 +1,23 @@
-# MovieTTD 后端部署指南
+# MovieTTD 后端部署指南<div align="center">
+
+<img src="./icon.png" width="120" alt="MovieTTD" />
+
+# MovieTTD · Server
+
+**MovieTTD 的后端服务 —— 为影视媒体库提供统一、容器化的后端能力**
+
+基于 **Rust** 构建核心服务，集成 **Python** Telegram 机器人组件，通过 **Docker Compose** 一键部署。支持媒体文件管理、健康检查、初始管理员配置，以及 Telegram 机器人后台任务。
+
+[![Release](https://img.shields.io/github/v/release/Shiwen645/MovieTTD_Server?style=flat-square&label=release&color=4C8BF5)](https://github.com/Shiwen645/MovieTTD_Server/releases)
+[![Stars](https://img.shields.io/github/stars/Shiwen645/MovieTTD_Server?style=flat-square&logo=github&color=4C8BF5)](https://github.com/Shiwen645/MovieTTD_Server/stargazers)
+[![License](https://img.shields.io/badge/license-AGPL--3.0-blue?style=flat-square)](./LICENSE)
+[![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+
+[部署指南](#部署) · [环境要求](#环境要求) · [快速启动](#快速启动) · [常见问题](#常见问题)
+
+</div>
 
 ### 1. 需要哪些环境？
 
