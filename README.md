@@ -1,12 +1,14 @@
-# MovieTTD 后端部署指南<div align="center">
+<div align="center">
 
-<img src="https://p3-luna.douyinpic.com/img/tos-cn-i-b829550vbb/625c3e93e6d541a7b2709982e24139f1~tplv-b829550vbb-image.jpeg" width="120" alt="MovieTTD" />
+<img src="https://p3-luna.douyinpic.com/img/tos-cn-i-b829550vbb/625c3e93e6d541a7b2709982e24139f1~tplv-b829550vbb-image.jpeg" width="120" style="border-radius: 15px;" alt="MovieTTD" />
 
 # MovieTTD · Server
 
 **MovieTTD 的后端服务 —— 为影视媒体库提供统一、容器化的后端能力**
 
-基于 **Rust** 构建核心服务，集成 **Python** Telegram 机器人组件，通过 **Docker Compose** 一键部署。支持媒体文件管理、健康检查、初始管理员配置，以及 Telegram 机器人后台任务。
+基于 **Rust** 构建核心服务，集成 **Python** Telegram 机器人组件，通过 **Docker Compose** 一键部署。支持媒体文件管理、健康检查、初始管理员配置，以及 Telegram 后台任务。
+
+> 本项目基于 [YunX](https://github.com/CYQawa/YunX) 二次开发，遵循 **GNU AGPL-3.0** 协议开源。
 
 [![Release](https://img.shields.io/github/v/release/Shiwen645/MovieTTD_Server?style=flat-square&label=release&color=4C8BF5)](https://github.com/Shiwen645/MovieTTD_Server/releases)
 [![Stars](https://img.shields.io/github/stars/Shiwen645/MovieTTD_Server?style=flat-square&logo=github&color=4C8BF5)](https://github.com/Shiwen645/MovieTTD_Server/stargazers)
@@ -15,9 +17,11 @@
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
 
-[部署指南](#部署) · [环境要求](#环境要求) · [快速启动](#快速启动) · [常见问题](#常见问题)
+[部署指南](#部署) · [环境要求](#环境要求) · [快速启动](#快速启动) · [协议与致谢](#协议与致谢) · [常见问题](#常见问题)
 
 </div>
+
+# MovieTTD 后端部署指南
 
 ### 1. 需要哪些环境？
 
@@ -125,3 +129,21 @@ http://你的服务器IP:18766
 ```text
 /opt/moviettd/media
 ```
+
+
+## 协议与致谢
+
+本项目（MovieTTD_Server）基于 [YunX](https://github.com/CYQawa/YunX) 二次开发，
+遵循 **GNU Affero General Public License v3.0（AGPL-3.0）** 协议开源。
+
+- **原项目**：[YunX](https://github.com/CYQawa/YunX) · 作者 [CYQawa](https://github.com/CYQawa) · 协议 AGPL-3.0
+- **本项目**：MovieTTD_Server · 在 YunX 基础上进行了服务端化、Docker 化等修改
+- **协议全文**：见仓库根目录 [LICENSE](./LICENSE)
+
+根据 AGPL-3.0 协议要求，任何基于本项目的修改与分发都必须：
+
+1. 保留原作者的版权声明与协议声明；
+2. 继续以 AGPL-3.0 协议开源；
+3. 向通过网络使用本服务的用户提供完整源代码的获取方式。
+
+感谢 YunX 作者 CYQawa 的开源贡献 🙏
