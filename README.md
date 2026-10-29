@@ -9,7 +9,7 @@
 | Docker | 在服务器上运行后端容器的工具 |
 | Docker Compose | 按配置文件构建、启动和管理容器的工具 |
 
-Compose 就是读取项目里的 `docker-compose.yml`，完成构建和启动。citeturn653950view0
+Compose 就是读取项目里的 `docker-compose.yml`，完成构建和启动。
 
 在 **1Panel → 终端**运行：
 
@@ -18,7 +18,7 @@ docker version
 docker compose version
 ```
 
-第一条能看到 **Server** 信息，第二条显示版本号，就说明环境已有，**不用再安装 Rust、C/C++ 或 Node.js**。
+第一条能看到 **Server** 信息，第二条显示版本号，就说明环境已有，
 
 ### 2. 上传哪些文件？
 
@@ -106,7 +106,3 @@ http://你的服务器IP:18766
 ```text
 /opt/moviettd/media
 ```
-
-我也修正了客户端原先拒绝远程 HTTP 的限制，需要运行更新后的开发版。HTTP 会明文传输账号和网盘凭证，临时使用时建议把端口来源限制为自己的公网 IP。
-
-部署文件、客户端测试和前端构建已检查通过；**尚未在你的 Ubuntu 服务器实际构建运行，也没有生成安装包**。完整步骤保存在 [1Panel 部署说明](E:/Development/PC/MovieTDD/server/DEPLOY-1PANEL.md)。
