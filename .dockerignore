@@ -1,0 +1,10 @@
+# Only source and Cargo manifests enter the build context.
+*
+!Cargo.toml
+!Cargo.lock
+!src/
+!src/**
+
+!telegram/
+!telegram/worker.py
+!telegram/requirements.txt

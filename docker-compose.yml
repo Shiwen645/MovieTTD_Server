@@ -1,0 +1,25 @@
+services:
+  moviettd:
+    build:
+      context: /opt/moviettd/server
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    stop_grace_period: 90s
+    ports:
+      - "18766:18766"
+    environment:
+      MOVIETTD_BIND: "0.0.0.0:18766"
+      MOVIETTD_DATA_DIR: "/data"
+      MOVIETTD_LIBRARY_ROOT: "/media"
+      # Replace YOUR_SERVER_IP with the server IP before first startup.
+      MOVIETTD_PUBLIC_URL: "http://YOUR_SERVER_IP:18766"
+    volumes:
+      - /opt/moviettd/data:/data
+      - /opt/moviettd/media:/media
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
